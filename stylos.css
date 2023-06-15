@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    background: #111;
+    width: 100%;
+    padding: 15 px 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.top-header {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-header ul a {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+section{
+    max-width: 960%;
+    padding: 40px 0;
+    margin: auto;
+}
+
+#results{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+}
+
+.item img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.item :hover img{
+transform: scale(1.15);
+}
+
+.item :hover .item-description{
+   bottom: 0; 
+    }
+
+ .item-description{
+    position: absolute;
+    bottom: -67px;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+ }
+
+ .item-description h2{
+font-size: 1.2rem;
+ }
+ 
+ .item-description h3{
+    font-size: 0.8rem;
+     }
+
+ .item a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .item-detail{
+display: flex;
+gap: 20px;
+ }
+
+ .item-detail-description{
+background: rgb(39, 43, 51);
+padding: 15px;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:20px ;
+ }
+
+ .item-detail-description, .item-detail img{
+flex: 0 1 50%;
+ }
+
+ #pagination{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 5px 0;
+ }
+
+ .page{
+    border: 1px solid #535353;
+    padding: 5px;
+    border-radius: 4px;
+    
+ }
+
+ .page a{
+    display: block;
+    color: #535353;
+    text-decoration: none;
+ }
+ .item-local{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 15px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+.item-episod{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 15px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+}
+ 
